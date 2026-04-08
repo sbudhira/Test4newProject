@@ -8,6 +8,7 @@ packages:
   gitUsername: sbudhira
   gitBranch: main
 - name: WmJDBCAdapter
+  version: 10.3.0.0.34
   wpmServer: https://packages.webmethods.io
   wpmRegistry: licensed
 services:
@@ -19,18 +20,28 @@ services:
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+- serviceName: project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_2
+  packages:
+  - name: Test4newProject
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 configurationVariables:
   jdbc.SAP TxStore Pool.maxConns: "10"
-  ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolable
-  : "false"
-  jdbcfunc.SAPTxStore.failFastMode: false
-  jdbc.SAP TxStore Pool.poolThreshold: "0"
-  ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.dbType
-  : ORACLE
-  jdbc.SAP TxStore Pool.spyenabled: "false"
+  ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.minimumPoolSize
+  : "1"
   ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.otherProperties
   : loginTimeout=60;
-  jdbc.SAP TxStore Pool.useSSL: "false"
+  ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.password
+  : "{AES}+fcc0vItGmt4T/f2Aot7bA=="
+  ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.transactionType
+  : NO_TRANSACTION
+  ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.serverName
+  : vadrhl9controller01.dev.fyre.ibm.com
+  ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.networkProtocol
+  : ""
   ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.trustStore
   : ""
   jdbc.SAP TxStore Pool.password: "{AES}nrGf3u7Wt20hFBGh5ZeEuQ=="
@@ -44,42 +55,86 @@ configurationVariables:
   jdbc.SAP TxStore Pool.snoopenabled: "false"
   ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.transactionType
   : NO_TRANSACTION
-  ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.datasourceClass
-  : com.wm.dd.jdbcx.oracle.OracleDataSource
-  jdbc.SAP TxStore Pool.expireTime: "60000"
-  jdbc.SAP TxStore Pool.minConns: "5"
-  ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.heartBeatInterval
+  ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.poolIncrementSize
+  : "1"
+  ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.startupRetryCount
   : "0"
+  jdbc.SAP TxStore Pool.expireTime: "60000"
+  ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.otherProperties
+  : loginTimeout=60;serviceName=ORCLPDB1;
   ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.user
   : BVT01
   jdbc.SAP TxStore Pool.driverAlias: MySQL CC Driver
-  ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.serverName
-  : vadrhl9controller01.dev.fyre.ibm.com
+  ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.dbType
+  : ORACLE
+  ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.driverType
+  : Progress® DataDirect®
   jdbcfunc.SAPTxStore.connPoolAlias: SAP TxStore Pool
   ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.networkProtocol
   : ""
   ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupRetryCount
   : "0"
-  ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolIncrementSize
-  : "1"
-  jdbc.SAP TxStore Pool.dbURL: jdbc:mysql://localhost:3306/SAPTRANSACTIONSTORE?useSSL=false&characterEncoding=utf-8&autoReconnect=true&maxReconnects=5&sessionVariables=wait_timeout=2147483
+  ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.maximumPoolSize
+  : "10"
   ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.maximumPoolSize
   : "10"
+  ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.heartBeatInterval
+  : "0"
   jdbc.SAP TxStore Pool.waitingThread: "10"
   ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.keyStore
   : ""
-  ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionEnabled
-  : "false"
   jdbc.SAP TxStore Pool.description: Connection Pool for the SAP Transaction Store
-  ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.databaseName
-  : ORCLPDB1
+  ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.poolable
+  : "false"
+  ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.user
+  : BVT01
   jdbc.SAP TxStore Pool.snoopparms: ddtdbg.ProtocolTraceEnable=true;ddtdbg.ProtocolTraceMaxline=16;ddtdbg.ProtocolTraceLocation=logs/snoop/SAP_TxStore_Pool.log;ddtdbg.ProtocolTraceShowTime=true
   ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.driverType
   : Progress® DataDirect®
-  ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.portNumber
-  : "1521"
   ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.blockingTimeout
   : "1000"
+  ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.blockingTimeout
+  : "1000"
+  ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.keyStore
+  : ""
+  ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolable
+  : "false"
+  jdbcfunc.SAPTxStore.failFastMode: false
+  jdbc.SAP TxStore Pool.poolThreshold: "0"
+  ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.dbType
+  : ORACLE
+  ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.datasourceClass
+  : com.wm.dd.jdbcx.oracle.OracleDataSource
+  jdbc.SAP TxStore Pool.spyenabled: "false"
+  jdbc.SAP TxStore Pool.useSSL: "false"
+  ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionEnabled
+  : "false"
+  ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.datasourceClass
+  : com.wm.dd.jdbcx.oracle.OracleDataSource
+  jdbc.SAP TxStore Pool.minConns: "5"
+  ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.heartBeatInterval
+  : "0"
+  ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.serverName
+  : vadrhl9controller01.dev.fyre.ibm.com
+  ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.expireTimeout
+  : "1000"
+  ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.startupBackoffSecs
+  : "10"
+  ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.trustStore
+  : ""
+  ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolIncrementSize
+  : "1"
+  jdbc.SAP TxStore Pool.dbURL: jdbc:mysql://localhost:3306/SAPTRANSACTIONSTORE?useSSL=false&characterEncoding=utf-8&autoReconnect=true&maxReconnects=5&sessionVariables=wait_timeout=2147483
+  ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionEnabled
+  : "false"
+  ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.databaseName
+  : ORCLPDB1
+  ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.portNumber
+  : "1521"
+  ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.portNumber
+  : "1521"
   ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.minimumPoolSize
   : "1"
   jdbc.SAP TxStore Pool.userid: root
+  ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.databaseName
+  : ORCLPDB1
