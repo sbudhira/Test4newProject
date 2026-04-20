@@ -45,9 +45,8 @@
   <value name="retry_max">0</value>
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
-    <value name="createdBy">sbudhira@us.ibm.com</value>
-    <value name="createdDate">1776451298675</value>
-    <value name="lastModifiedDate">1776451298675</value>
+    <value name="lastModifiedBy">sbudhira@us.ibm.com</value>
+    <value name="lastModifiedDate">1776723367965</value>
     <value name="displayName">httptest</value>
     <value name="description"></value>
     <record name="stepNodeHints" javaclass="com.wm.util.Values">
@@ -99,6 +98,11 @@
         </array>
         <array name="outputMap" type="object" depth="1" javaclass="java.lang.Object">
         </array>
+        <value name="nodePathForDebug">0</value>
+      </record>
+      <record name="/1" javaclass="com.wm.util.Values">
+        <value name="itemType">ALL</value>
+        <value name="name">NEW</value>
       </record>
     </record>
   </record>
