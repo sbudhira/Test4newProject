@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="node_type">connectorAccount</value>
+  <value name="node_subtype">httpAccount</value>
+  <value name="node_nsName">project.test4new.http.connections:test123</value>
+  <value name="node_pkg">Test4newProject</value>
+  <value name="is_public">false</value>
+  <value name="assetId">Test4newProject.project.test4new.http.connections:test123</value>
+  <value name="connectionName">test123</value>
+  <value name="auth">basic</value>
+  <value name="checkCRL"></value>
+  <value name="cipherSuites"></value>
+  <value name="connectTimeout">300000</value>
+  <value name="followRedirect"></value>
+  <value name="hostNameVerification"></value>
+  <value name="keepAliveTimeout">180</value>
+  <null name="keyAlias"/>
+  <null name="keystoreAlias"/>
+  <value name="maxKeepAliveConnections">0</value>
+  <value name="newSession">no</value>
+  <value name="pass">wm.is.admin.Test4newProject.project.test4new.http.connections:test123.pass</value>
+  <value name="timeout">300000</value>
+  <value name="token"></value>
+  <null name="trustStore"/>
+  <value name="url">tps://localdev.web.local/#/projects/fl58474fe391594aeab6d83e48eb4c1dc5/edge/flow-editor/httptest</value>
+  <value name="user">test</value>
+</Values>
