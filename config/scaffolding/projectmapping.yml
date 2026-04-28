@@ -1,0 +1,10 @@
+version: "1.0"
+projectName: Test4newProject
+runtimes:
+- runtimeAlias: testnew4
+  assets:
+  - name: Untitled Workflow
+    type: workflow
+    uid: fl4643105c29f9407286e5c07ea3096e37
+    stepId: a2
+    reference: project.test4new.integrations:date1
