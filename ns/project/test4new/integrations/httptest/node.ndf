@@ -46,7 +46,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">sbudhira@us.ibm.com</value>
-    <value name="lastModifiedDate">1776723464213</value>
+    <value name="lastModifiedDate">1777393538751</value>
     <value name="displayName">httptest</value>
     <value name="description"></value>
     <record name="stepNodeHints" javaclass="com.wm.util.Values">
@@ -98,7 +98,6 @@
         </array>
         <array name="outputMap" type="object" depth="1" javaclass="java.lang.Object">
         </array>
-        <value name="nodePathForDebug">0</value>
         <record name="connection" javaclass="com.wm.util.Values">
           <value name="connectionName">test123</value>
           <value name="connectionType">http</value>
@@ -107,11 +106,21 @@
         <value name="connectionNSName">project.test4new.http.connections:test123</value>
         <value name="connectionType">http</value>
         <Boolean name="accountReferenceResolved">true</Boolean>
+        <value name="nodePathForDebug">0</value>
       </record>
       <record name="/1" javaclass="com.wm.util.Values">
-        <value name="itemType">ALL</value>
-        <value name="name">NEW</value>
-        <value name="nodePathForDebug">1</value>
+        <null name="name"/>
+        <value name="itemType">SERVICES</value>
+        <record name="serviceInfo" javaclass="com.wm.util.Values">
+          <value name="groupDisplayName">Date</value>
+          <value name="groupName">date</value>
+          <null name="services"/>
+        </record>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="displayName">getCurrentDate</value>
+          <value name="serviceName">pub.date:getCurrentDate</value>
+          <value name="transformerSupport">true</value>
+        </record>
       </record>
     </record>
   </record>
