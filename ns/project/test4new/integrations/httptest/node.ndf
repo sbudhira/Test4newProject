@@ -46,7 +46,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">sbudhira@us.ibm.com</value>
-    <value name="lastModifiedDate">1777396907559</value>
+    <value name="lastModifiedDate">1777398485328</value>
     <value name="displayName">httptest</value>
     <value name="description"></value>
     <record name="stepNodeHints" javaclass="com.wm.util.Values">
@@ -70,6 +70,13 @@
         <value name="allowCustomOperations">false</value>
         <value name="appType">predefined</value>
         <Boolean name="hasAccount">true</Boolean>
+        <record name="connection" javaclass="com.wm.util.Values">
+          <value name="connectionName">test123</value>
+          <value name="connectionType">http</value>
+          <null name="description"/>
+        </record>
+        <value name="connectionNSName">project.test4new.http.connections:test123</value>
+        <value name="connectionType">http</value>
         <value name="type">http</value>
         <value name="version">1</value>
         <null name="packageName"/>
@@ -98,15 +105,7 @@
         </array>
         <array name="outputMap" type="object" depth="1" javaclass="java.lang.Object">
         </array>
-        <record name="connection" javaclass="com.wm.util.Values">
-          <value name="connectionName">test123</value>
-          <value name="connectionType">http</value>
-          <null name="description"/>
-        </record>
-        <value name="connectionNSName">project.test4new.http.connections:test123</value>
-        <value name="connectionType">http</value>
         <Boolean name="accountReferenceResolved">true</Boolean>
-        <value name="nodePathForDebug">0</value>
       </record>
     </record>
   </record>
