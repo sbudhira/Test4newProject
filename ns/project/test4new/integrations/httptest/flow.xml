@@ -411,4 +411,8 @@
 </MAPSET>
 </MAP>
 </INVOKE>
+
+<INVOKE NAME="Date" SERVICE="pub.date:getCurrentDate">
+  <COMMENT></COMMENT>
+</INVOKE>
 </FLOW>

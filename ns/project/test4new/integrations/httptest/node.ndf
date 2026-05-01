@@ -46,7 +46,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">sbudhira@us.ibm.com</value>
-    <value name="lastModifiedDate">1777398485328</value>
+    <value name="lastModifiedDate">1777649842556</value>
     <value name="displayName">httptest</value>
     <value name="description"></value>
     <record name="stepNodeHints" javaclass="com.wm.util.Values">
@@ -106,6 +106,21 @@
         <array name="outputMap" type="object" depth="1" javaclass="java.lang.Object">
         </array>
         <Boolean name="accountReferenceResolved">true</Boolean>
+        <value name="nodePathForDebug">0</value>
+      </record>
+      <record name="/1" javaclass="com.wm.util.Values">
+        <null name="name"/>
+        <value name="itemType">SERVICES</value>
+        <record name="serviceInfo" javaclass="com.wm.util.Values">
+          <value name="groupDisplayName">Date</value>
+          <value name="groupName">date</value>
+          <null name="services"/>
+        </record>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="displayName">getCurrentDate</value>
+          <value name="serviceName">pub.date:getCurrentDate</value>
+          <value name="transformerSupport">true</value>
+        </record>
       </record>
     </record>
   </record>
