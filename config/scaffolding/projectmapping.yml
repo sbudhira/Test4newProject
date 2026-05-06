@@ -12,3 +12,8 @@ runtimes:
   assets:
   - name: httptest123
     type: DAF
+  - name: ddddddd
+    type: REST
+    path: /localhost:5555
+    action: GET
+    reference: fld_2041028534_stage00.projects.fla79819500afe4341b0b7c5b36a1bc630.WmPackageServiceProvider.project.test4new.integrations:httptest
