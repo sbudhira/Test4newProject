@@ -8,3 +8,7 @@ runtimes:
     uid: fl4643105c29f9407286e5c07ea3096e37
     stepId: a2
     reference: project.test4new.integrations:date1
+- runtimeAlias: test4new
+  assets:
+  - name: httptest123
+    type: DAF
