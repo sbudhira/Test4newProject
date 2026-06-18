@@ -11,6 +11,10 @@ packages:
   gitUrl: https://github.com/sbudhira
   gitUsername: sbudhira
   gitBranch: main
+- name: WmMQAdapter
+  wpmServer: https://packages.webmethods.io
+  wpmRegistry: licensed
+  wpmVersion: latest
 services:
 - serviceName: project.test4new.http.connections:test123
   packages:

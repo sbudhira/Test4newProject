@@ -11,18 +11,19 @@
   <null name="replication_services"/>
   <record name="requires" javaclass="com.wm.util.Values">
     <value name="WmJDBCAdapter">10.3.0.0.34</value>
+    <value name="WmMQAdapter">6.5.0.0.19</value>
   </record>
   <null name="lazy_load_node_types"/>
   <null name="listACL"/>
   <value name="webappLoad">yes</value>
   <value name="reloadWithDependentPackage">yes</value>
-  <value name="build">31</value>
+  <value name="build">32</value>
   <null name="description"/>
   <value name="created_date">08-04-2026 19:12:19 GMT</value>
   <null name="extendedProperties"/>
   <null name="target_server_version"/>
   <value name="isProjectPackage">true</value>
-  <value name="lastUpdated">2026-06-08T16:06:16.875113526Z</value>
+  <value name="lastUpdated">2026-06-18T04:15:33.704220194Z</value>
   <value name="wmProjectId">fle2777ec67af24fe98db96c4cfbd6c41c</value>
   <value name="creator">Sarika Budhiraja</value>
 </Values>
