@@ -69,26 +69,26 @@ configurationVariables:
   jdbc.SAP TxStore Pool.maxConns: "10"
   ? artConnection.Test4newProject.project.test4new.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_1.connectionSettings.userId
   : ibmadpuser
-  ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionManagerSettings.startupRetryCount
-  : "0"
   ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionManagerSettings.poolIncrementSize
   : "1"
+  ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionManagerSettings.startupRetryCount
+  : "0"
   ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionSettings.databaseName
   : ""
-  ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.minimumPoolSize
-  : "1"
   ? artConnection.Test4newProject.project.test4new.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_1.connectionManagerSettings.startupBackoffSecs
   : "10"
+  ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.minimumPoolSize
+  : "1"
   ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.password
   : "{AES}aYrXC43dTWsDUHRWG5mhTA=="
   ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.otherProperties
   : loginTimeout=60;
-  ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.serverName
-  : vadrhl9controller01.dev.fyre.ibm.com
-  ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.transactionType
-  : NO_TRANSACTION
   ? artConnection.Test4newProject.project.test4new.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_1.connectionSettings.dynamicQueuePrefix
   : ""
+  ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.transactionType
+  : NO_TRANSACTION
+  ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.serverName
+  : vadrhl9controller01.dev.fyre.ibm.com
   ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.networkProtocol
   : ""
   ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.trustStore
@@ -110,10 +110,10 @@ configurationVariables:
   : ""
   ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.transactionType
   : NO_TRANSACTION
-  ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.startupRetryCount
-  : "0"
   ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.poolIncrementSize
   : "3"
+  ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.startupRetryCount
+  : "0"
   jdbc.SAP TxStore Pool.expireTime: "60000"
   ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.otherProperties
   : loginTimeout=60;serviceName=ORCLPDB1;
