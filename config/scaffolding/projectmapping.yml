@@ -24,3 +24,8 @@ runtimes:
     uid: flc78a56d27f5f40df855e54c3c991dcf8
     stepId: a0
     reference: project.test4new.integrations:date1
+  - name: Untitled Workflow
+    type: workflow
+    uid: flc78a56d27f5f40df855e54c3c991dcf8
+    stepId: a1
+    reference: project.test4new.integrations:MQputservice
