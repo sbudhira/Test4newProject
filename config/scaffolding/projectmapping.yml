@@ -17,3 +17,10 @@ runtimes:
     path: /localhost:5555
     action: GET
     reference: fld_2041028534_stage00.projects.fla79819500afe4341b0b7c5b36a1bc630.WmPackageServiceProvider.project.test4new.integrations:httptest
+- runtimeAlias: ERT1
+  assets:
+  - name: Untitled Workflow
+    type: workflow
+    uid: flc78a56d27f5f40df855e54c3c991dcf8
+    stepId: a0
+    reference: project.test4new.integrations:date1
