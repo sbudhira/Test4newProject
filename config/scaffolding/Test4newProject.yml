@@ -147,10 +147,10 @@ configurationVariables:
   jdbc.SAP TxStore Pool.spyparms: SpyAttributes=(log=(file)logs/spy/SAP_TxStore_Pool.log;logTName=yes;timestamp=yes)
   ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.password
   : "{AES}aYrXC43dTWsDUHRWG5mhTA=="
-  ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.poolIncrementSize
-  : "3"
   ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.startupRetryCount
   : "0"
+  ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.poolIncrementSize
+  : "3"
   jdbc.SAP TxStore Pool.expireTime: "60000"
   ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.user
   : BVT01
@@ -198,13 +198,13 @@ configurationVariables:
   : ""
   jdbcfunc.SAPTxStore.failFastMode: false
   ? artConnection.Test4newProject.project.test4new.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_1.connectionEnabled
-  : "true"
+  : "false"
   ? artConnection.Test4newProject.project.test4new.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_1.connectionSettings.sendExitInit
   : ""
   ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionManagerSettings.minimumPoolSize
   : "1"
   ? artConnection.Test4newProject.project.test4new.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_1.connectionSettings.channel
-  : c1
+  : ssss
   jdbc.SAP TxStore Pool.useSSL: "false"
   ? artConnection.Test4newProject.project.test4new.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_1.connectionSettings.sslKeyStoreAlias
   : ""
@@ -263,7 +263,7 @@ configurationVariables:
   ? artConnection.Test4newProject.project.test4new.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_1.connectionManagerSettings.blockingTimeout
   : "1000"
   ? artConnection.Test4newProject.project.test4new.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_1.connectionSettings.queueManagerName
-  : qm1402
+  : sssss
   jdbc.SAP TxStore Pool.snoopenabled: "false"
   ? artConnection.Test4newProject.project.test4new.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_1.connectionSettings.sslKeyStore
   : ""
@@ -325,7 +325,7 @@ configurationVariables:
   ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionEnabled
   : "false"
   ? artConnection.Test4newProject.project.test4new.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_1.connectionSettings.hostName
-  : 9.46.192.176
+  : ssssss
   ? artConnection.Test4newProject.project.test4new.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_1.connectionSettings.sslCipherSpec
   : TLS_RSA_WITH_AES_128_CBC_SHA256
   ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.heartBeatInterval
@@ -337,7 +337,7 @@ configurationVariables:
   ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionManagerSettings.poolable
   : "false"
   ? artConnection.Test4newProject.project.test4new.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_1.connectionSettings.queueName
-  : q1
+  : ssss
   jdbc.SAP TxStore Pool.dbURL: jdbc:mysql://localhost:3306/SAPTRANSACTIONSTORE?useSSL=false&characterEncoding=utf-8&autoReconnect=true&maxReconnects=5&sessionVariables=wait_timeout=2147483
   ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.databaseName
   : ORCLPDB1
@@ -348,7 +348,7 @@ configurationVariables:
   ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.portNumber
   : "1521"
   ? artConnection.Test4newProject.project.test4new.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_1.connectionSettings.port
-  : "1402"
+  : "1414"
   ? artConnection.Test4newProject.project.test4new.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_1.connectionManagerSettings.poolable
   : "false"
   jdbc.SAP TxStore Pool.userid: root
