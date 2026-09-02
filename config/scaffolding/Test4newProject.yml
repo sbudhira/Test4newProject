@@ -147,10 +147,10 @@ configurationVariables:
   jdbc.SAP TxStore Pool.spyparms: SpyAttributes=(log=(file)logs/spy/SAP_TxStore_Pool.log;logTName=yes;timestamp=yes)
   ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.password
   : "{AES}aYrXC43dTWsDUHRWG5mhTA=="
-  ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.startupRetryCount
-  : "0"
   ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.poolIncrementSize
   : "3"
+  ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.startupRetryCount
+  : "0"
   jdbc.SAP TxStore Pool.expireTime: "60000"
   ? artConnection.Test4newProject.project.test4new.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.user
   : BVT01
