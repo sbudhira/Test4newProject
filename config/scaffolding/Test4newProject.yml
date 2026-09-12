@@ -22,7 +22,7 @@ packages:
   wpmRegistry: licensed
   wpmVersion: latest
 services:
-- serviceName: project.test4new.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections:IBMMQ_4
+- serviceName: project.test4new.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections:IBMMQ_5
   packages:
   - name: Test4newProject
     version: "1.0"
